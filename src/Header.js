@@ -1,7 +1,7 @@
 import React from 'react';
 
 export function Header(props) {
-  let [clock, setClock] = React.useState(Date().toLocaleString());
+  const [clock, setClock] = React.useState(Date().toLocaleString());
 
   console.log(clock);
 
