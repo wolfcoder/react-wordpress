@@ -3,6 +3,10 @@ import React from 'react';
 export default function Counter(){
   const  [count, setCount] = React.useState(0);
 
+  React.useEffect(() => {
+    localStorage.setItem('count', count)
+  },  [count] );
+
   function handleClick(event){
     event.preventDefault();
 
